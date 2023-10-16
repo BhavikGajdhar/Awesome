@@ -1,0 +1,31 @@
+
+.whats_on_mind_wrapper{
+  margin-top: 26px;
+}
+
+.whats_on_mind_heading {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.whats_on_mind_images_wrapper {
+  margin-top: 10px;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .whats_on_mind_image {
+    .whats_on_mind_image_img {
+      width: 144px;
+      height: 180px;
+    }
+  }
+
+  .whats_on_mind_image:not(:first-child) {
+    margin-left: 20px;
+  }
+}

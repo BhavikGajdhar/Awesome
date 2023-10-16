@@ -1,0 +1,70 @@
+.restaurants_wrapper {
+  margin-top: 26px;
+}
+
+.restaurants_heading {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.restaurants_cards_wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 20px;
+
+  @media (min-width:768px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .restaurant_card {
+    width: 100%;
+
+    &_image {
+      width: 100%;
+      height: 14rem;
+      border-radius: 12px;
+      overflow: hidden;
+
+      &_img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &_body {
+      margin-top: 8px;
+      &_title {
+        font-weight: 600;
+        font-size: 20px;
+        color: $text-gray-dark;
+      }
+      &_rating {
+        display: flex;
+        align-items: center;
+        &_logo {
+          width: 20px;
+        }
+        &_text {
+          font-weight: 500;
+          font-size: 18px;
+          margin-left: 6px;
+        }
+      }
+
+      &_cuisines {
+        color: $text-gray-light;
+        font-size: 16px;
+      }
+
+      &_area {
+        color: $text-gray-light;
+        font-size: 16px;
+      }
+    }
+  }
+}
