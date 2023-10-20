@@ -24,7 +24,7 @@ const getHomeData = async () => {
     data.data.cards[1].card.card.gridElements.infoWithStyle.info
       .map(
         (info) =>
-          `<a class="whats_on_mind_image"  onclick="load_detailPage(${new URLSearchParams(info.entityId.split("?")[1]).get("collection_id")})"><figure ><img class="whats_on_mind_image_img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/${info.imageId}"/></figure></a>`
+          `<a class="whats_on_mind_image"  onclick="load_detailPage(${new URLSearchParams(info.action.link.split("?")[1]).get("collection_id")})"><figure ><img class="whats_on_mind_image_img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/${info.imageId}"/></figure></a>`
       )
       .join("");
   const restaurants_cards =

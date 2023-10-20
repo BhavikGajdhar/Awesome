@@ -7,10 +7,8 @@ const getDetailData = async () => {
   const URL = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.5992349&lng=72.9342451&collection=${collectionId}&tags=layout_ux4&sortBy=&filters=&type=rcv2&offset=0&page_type=null`;
   const res = await fetch(URL);
   const data = await res.json();
-  console.log(data);
   const top_restaurant_card = data.data.cards
     .map((restaurant) => {
-        // console.log(data.data.cards.indexOf(restaurant),"hsjdhs");
       if (data.data.cards.indexOf(restaurant) > 2) {
         return`  <div class="restaurant_card">
             <figure class="restaurant_card_image">
@@ -55,4 +53,3 @@ const getDetailData = async () => {
   restaurantsHeading.innerHTML= data.data.cards[0].card.card.title;
 };
 getDetailData();
-// detailPage.insertAdjacentHTML("afterbegin", `<h1>Bhavik Gajdhar</h1>`);
