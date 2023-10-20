@@ -29,6 +29,14 @@ body {
   padding: 28px 24px;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .nav_wrapper {
   width: 100%;
   position: fixed;
@@ -89,6 +97,10 @@ body {
 }
 .navbar .nav_list .nav_item:not(:first-child) {
   margin-left: 48px;
+}
+
+.nav-items {
+  list-style: none;
 }
 
 .offer_banner_heading {
@@ -273,4 +285,31 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+.p-footer {
+  padding: 0px 217px 98px;
+}
+
+.w-25 {
+  width: 25%;
+  padding: 0px 10px;
+}
+@media screen and (max-width: 850px) {
+  .w-25 {
+    width: 50%;
+  }
+}
+
+.footer-main {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5%;
+}
+
+.footer-bg-light {
+  color: #9a9b9e;
+}
+
+.m-20 {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -4,3 +4,24 @@ footer {
     text-align: center;
     padding: 10px;
 }
+.p-footer {
+    padding: 0px 217px 98px;
+}
+.w-25 {
+    width: 25%;
+    padding: 0px 10px;
+
+    @media screen and (max-width:850px) {
+        width: 50%;
+    }
+}
+.footer-main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+}
+.footer-bg-light{
+    color: #9a9b9e;
+}
+.m-20{
+    margin: 10px;
+}
