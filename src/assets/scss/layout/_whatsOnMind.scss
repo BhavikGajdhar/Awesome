@@ -1,14 +1,14 @@
 
-.whats_on_mind_wrapper{
+.whats-on-mind-wrapper{
   margin-top: 26px;
 }
 
-.whats_on_mind_heading {
+.whats-on-mind-heading {
   font-weight: 900;
   font-size: 24px;
 }
 
-.whats_on_mind_images_wrapper {
+.whats-on-mind-images-wrapper {
   margin-top: 10px;
   display: flex;
   overflow: hidden;
@@ -18,14 +18,14 @@
     display: none;
   }
 
-  .whats_on_mind_image {
-    .whats_on_mind_image_img {
+  .whats-on-mind-image {
+    .whats-on-mind-image-img {
       width: 144px;
       height: 180px;
     }
   }
 
-  .whats_on_mind_image:not(:first-child) {
+  .whats-on-mind-image:not(:first-child) {
     margin-left: 20px;
   }
 }

@@ -1,9 +1,9 @@
-.offer_banner_heading {
+.offer-banner-heading {
   font-weight: 900;
   font-size: 24px;
 }
 
-.banner_images_wrapper {
+.banner-images-wrapper {
   margin-top: 16px;
   display: flex;
   overflow: hidden;
@@ -13,14 +13,14 @@
     display: none;
   }
 
-  .banner_image {
-    .banner_image_img {
+  .banner-image {
+    .banner-image-img {
       width: 425px;
       height: 252px;
     }
   }
 
-  .banner_image:not(:first-child) {
+  .banner-image:not(:first-child) {
     margin-left: 20px;
   }
 }

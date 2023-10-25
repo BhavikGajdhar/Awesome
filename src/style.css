@@ -22,7 +22,7 @@ body {
 .main {
   margin-top: 5rem;
 }
-.main_inner_wrapper {
+.main-inner-wrapper {
   width: 100%;
   max-width: 92rem;
   margin: 0 auto;
@@ -37,7 +37,7 @@ body {
   flex-wrap: wrap;
 }
 
-.nav_wrapper {
+.nav-wrapper {
   width: 100%;
   position: fixed;
   top: 0;
@@ -58,44 +58,44 @@ body {
   align-items: center;
   padding: 16px;
 }
-.navbar .logo_location {
+.navbar .logo-location {
   display: flex;
   align-items: center;
 }
-.navbar .logo_location .nav_location_button {
+.navbar .logo-location .nav-location-button {
   background: transparent;
   border: none;
   margin-left: 20px;
   font-size: 14px;
 }
-.navbar .logo_location .nav_location_button .nav_location_button_other {
+.navbar .logo-location .nav-location-button .nav-location-button-other {
   font-weight: 700;
   border-bottom: 2px solid black;
 }
-.navbar .logo_location .nav_location_button .nav_location_button_name {
+.navbar .logo-location .nav-location-button .nav-location-button-name {
   padding-left: 5px;
   color: rgb(107, 114, 128);
 }
-.navbar .nav_list {
+.navbar .nav-list {
   display: flex;
   list-style: none;
 }
-.navbar .nav_list .nav_item {
+.navbar .nav-list .nav-item {
   font-size: 16px;
 }
-.navbar .nav_list .nav_item_link {
+.navbar .nav-list .nav-item-link {
   color: #000000;
   text-decoration: none;
 }
-.navbar .nav_list .nav_item:not(:last-child) {
+.navbar .nav-list .nav-item:not(:last-child) {
   display: none;
 }
 @media (min-width: 768px) {
-  .navbar .nav_list .nav_item:not(:last-child) {
+  .navbar .nav-list .nav-item:not(:last-child) {
     display: list-item;
   }
 }
-.navbar .nav_list .nav_item:not(:first-child) {
+.navbar .nav-list .nav-item:not(:first-child) {
   margin-left: 48px;
 }
 
@@ -103,179 +103,179 @@ body {
   list-style: none;
 }
 
-.offer_banner_heading {
+.offer-banner-heading {
   font-weight: 900;
   font-size: 24px;
 }
 
-.banner_images_wrapper {
+.banner-images-wrapper {
   margin-top: 16px;
   display: flex;
   overflow: hidden;
   overflow-x: auto;
 }
-.banner_images_wrapper::-webkit-scrollbar {
+.banner-images-wrapper::-webkit-scrollbar {
   display: none;
 }
-.banner_images_wrapper .banner_image .banner_image_img {
+.banner-images-wrapper .banner-image .banner-image-img {
   width: 425px;
   height: 252px;
 }
-.banner_images_wrapper .banner_image:not(:first-child) {
+.banner-images-wrapper .banner-image:not(:first-child) {
   margin-left: 20px;
 }
 
-.whats_on_mind_wrapper {
+.whats-on-mind-wrapper {
   margin-top: 26px;
 }
 
-.whats_on_mind_heading {
+.whats-on-mind-heading {
   font-weight: 900;
   font-size: 24px;
 }
 
-.whats_on_mind_images_wrapper {
+.whats-on-mind-images-wrapper {
   margin-top: 10px;
   display: flex;
   overflow: hidden;
   overflow-x: auto;
 }
-.whats_on_mind_images_wrapper::-webkit-scrollbar {
+.whats-on-mind-images-wrapper::-webkit-scrollbar {
   display: none;
 }
-.whats_on_mind_images_wrapper .whats_on_mind_image .whats_on_mind_image_img {
+.whats-on-mind-images-wrapper .whats-on-mind-image .whats-on-mind-image-img {
   width: 144px;
   height: 180px;
 }
-.whats_on_mind_images_wrapper .whats_on_mind_image:not(:first-child) {
+.whats-on-mind-images-wrapper .whats-on-mind-image:not(:first-child) {
   margin-left: 20px;
 }
 
-.top_restaurants_wrapper {
+.top-restaurants-wrapper {
   margin-top: 26px;
 }
 
-.top_restaurants_heading {
+.top-restaurants-heading {
   font-weight: 900;
   font-size: 24px;
 }
 
-.top_restaurants_cards_wrapper {
+.top-restaurants-cards-wrapper {
   display: flex;
   overflow: hidden;
   overflow-x: auto;
   margin-top: 20px;
 }
-.top_restaurants_cards_wrapper::-webkit-scrollbar {
+.top-restaurants-cards-wrapper::-webkit-scrollbar {
   display: none;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card {
+.top-restaurants-cards-wrapper .top-restaurant-card {
   width: 18rem;
   max-width: 18rem;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_image {
+.top-restaurants-cards-wrapper .top-restaurant-card-image {
   width: 18rem;
   height: 12rem;
   border-radius: 12px;
   overflow: hidden;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_image_img {
+.top-restaurants-cards-wrapper .top-restaurant-card-image-img {
   width: 100%;
   height: 100%;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body {
+.top-restaurants-cards-wrapper .top-restaurant-card-body {
   margin-top: 8px;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body_title {
+.top-restaurants-cards-wrapper .top-restaurant-card-body-title {
   font-weight: 600;
   font-size: 20px;
   color: rgb(55, 65, 81);
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body_rating {
+.top-restaurants-cards-wrapper .top-restaurant-card-body-rating {
   display: flex;
   align-items: center;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body_rating_logo {
+.top-restaurants-cards-wrapper .top-restaurant-card-body-rating-logo {
   width: 20px;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body_rating_text {
+.top-restaurants-cards-wrapper .top-restaurant-card-body-rating-text {
   font-weight: 500;
   font-size: 18px;
   margin-left: 6px;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body_cuisines {
+.top-restaurants-cards-wrapper .top-restaurant-card-body-cuisines {
   color: rgb(107, 114, 128);
   font-size: 16px;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card_body_area {
+.top-restaurants-cards-wrapper .top-restaurant-card-body-area {
   color: rgb(107, 114, 128);
   font-size: 16px;
 }
-.top_restaurants_cards_wrapper .top_restaurant_card:not(:first-child) {
+.top-restaurants-cards-wrapper .top-restaurant-card:not(:first-child) {
   margin-left: 20px;
 }
 
-.restaurants_wrapper {
+.restaurants-wrapper {
   margin-top: 26px;
 }
 
-.restaurants_heading {
+.restaurants-heading {
   font-weight: 900;
   font-size: 24px;
 }
 
-.restaurants_cards_wrapper {
+.restaurants-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 32px;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  .restaurants_cards_wrapper {
+  .restaurants-cards-wrapper {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
-.restaurants_cards_wrapper::-webkit-scrollbar {
+.restaurants-cards-wrapper::-webkit-scrollbar {
   display: none;
 }
-.restaurants_cards_wrapper .restaurant_card {
+.restaurants-cards-wrapper .restaurant-card {
   width: 100%;
 }
-.restaurants_cards_wrapper .restaurant_card_image {
+.restaurants-cards-wrapper .restaurant-card-image {
   width: 100%;
   height: 14rem;
   border-radius: 12px;
   overflow: hidden;
 }
-.restaurants_cards_wrapper .restaurant_card_image_img {
+.restaurants-cards-wrapper .restaurant-card-image-img {
   width: 100%;
   height: 100%;
 }
-.restaurants_cards_wrapper .restaurant_card_body {
+.restaurants-cards-wrapper .restaurant-card-body {
   margin-top: 8px;
 }
-.restaurants_cards_wrapper .restaurant_card_body_title {
+.restaurants-cards-wrapper .restaurant-card-body-title {
   font-weight: 600;
   font-size: 20px;
   color: rgb(55, 65, 81);
 }
-.restaurants_cards_wrapper .restaurant_card_body_rating {
+.restaurants-cards-wrapper .restaurant-card-body-rating {
   display: flex;
   align-items: center;
 }
-.restaurants_cards_wrapper .restaurant_card_body_rating_logo {
+.restaurants-cards-wrapper .restaurant-card-body-rating-logo {
   width: 20px;
 }
-.restaurants_cards_wrapper .restaurant_card_body_rating_text {
+.restaurants-cards-wrapper .restaurant-card-body-rating-text {
   font-weight: 500;
   font-size: 18px;
   margin-left: 6px;
 }
-.restaurants_cards_wrapper .restaurant_card_body_cuisines {
+.restaurants-cards-wrapper .restaurant-card-body-cuisines {
   color: rgb(107, 114, 128);
   font-size: 16px;
 }
-.restaurants_cards_wrapper .restaurant_card_body_area {
+.restaurants-cards-wrapper .restaurant-card-body-area {
   color: rgb(107, 114, 128);
   font-size: 16px;
 }

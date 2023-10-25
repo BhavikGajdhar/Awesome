@@ -1,4 +1,4 @@
-.nav_wrapper {
+.nav-wrapper {
   width: 100%;
   position: fixed;
   top: 0;
@@ -20,22 +20,22 @@
   padding: 16px;
 
   // Start logo and location
-  .logo_location {
+  .logo-location {
     display: flex;
     align-items: center;
     // Start location button
-    .nav_location_button {
+    .nav-location-button {
       background: transparent;
       border: none;
       margin-left: 20px;
       font-size: 14px;
 
-      .nav_location_button_other {
+      .nav-location-button-other {
         font-weight: 700;
         border-bottom: 2px solid black;
       }
 
-      .nav_location_button_name {
+      .nav-location-button-name {
         padding-left: 5px;
         color: $text-gray-light;
       }
@@ -45,13 +45,13 @@
   // End logo and location
 
   // Start nav list items
-  .nav_list {
+  .nav-list {
     display: flex;
     list-style: none;
 
-    .nav_item {
+    .nav-item {
       font-size: 16px;
-      &_link {
+      &-link {
         color: #000000;
         text-decoration: none;
       }
@@ -65,7 +65,7 @@
       }
     }
     
-    .nav_item:not(:first-child) {
+    .nav-item:not(:first-child) {
       margin-left: 48px;
     }
   }
