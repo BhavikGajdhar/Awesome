@@ -10,22 +10,32 @@ const top_restaurant_card_wrapper = document.getElementById(
 const restaurants_cards_wrapper = document.getElementById(
   "restaurants-cards-wrapper"
 );
-const getHomeData = async () => {
-  const URL = `${Constants.API_URL}/v5?lat=20.5992349&lng=72.9342451&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+const leftArrow = document.querySelector(".left-arrow-btn");
+const rightArrow = document.querySelector(".right-arrow-btn");
+(async () => {
+  const URL = `${Constants.API_URL}/restaurants/list/v5?lat=20.5992349&lng=72.9342451&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
   const res = await fetch(URL);
   const data = await res.json();
   const bannerImages =
     data.data.cards[0].card.card.gridElements.infoWithStyle.info
       .map(
         (info) =>
-          `<a class="banner-image" href="./detailPage.html?collection=${info.entityId}" ><figure ><img class="banner-image-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/${info.imageId}"/></figure></a>`
+          `<a
+            class="banner-image"
+            href="./detailpage.html?collection=${info.entityId}"
+            ><figure>
+              <img
+                class="banner-image-img"
+                src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/${info.imageId}"
+              /></figure
+          ></a>`
       )
       .join("");
   const whats_on_mind_images =
     data.data.cards[1].card.card.gridElements.infoWithStyle.info
       .map(
         (info) =>
-          `<a class="whats-on-mind-image" href="./detailPage.html?collection=${new URLSearchParams(
+          `<a class="whats-on-mind-image" href="./detailpage.html?collection=${new URLSearchParams(
             info.action.link.split("?")[1]
           ).get(
             "collection_id"
@@ -38,13 +48,13 @@ const getHomeData = async () => {
     data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
       .map(
         (restaurant) =>
-          `  <div class="restaurant-card">
+          ` <a class="text-decoration-none" href="./restaurantpage.html?restaurantId=${
+            restaurant.info.id
+          }"> <div class="restaurant-card">
         <figure class="restaurant-card-image">
           <img
             class="restaurant-card-image-img"
-            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/${
-              restaurant.info.cloudinaryImageId
-            }"/>
+            src="${Constants.IMAGE_URL}/${restaurant.info.cloudinaryImageId}"/>
             alt=""
           />
         </figure>
@@ -70,6 +80,7 @@ const getHomeData = async () => {
           <p class="restaurant-card-body-area">${restaurant.info.areaName}</p>
         </div>
       </div>
+      </a>
         `
       )
       .join("");
@@ -77,13 +88,13 @@ const getHomeData = async () => {
     data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
       .map(
         (restaurant) =>
-          `  <div class="top-restaurant-card">
+          `  <a class="text-decoration-none top-restaurant-card"  href="./restaurantpage.html?restaurantId=${
+            restaurant.info.id
+          }"> <div >
         <figure class="top-restaurant-card-image">
           <img
             class="top-restaurant-card-image-img"
-            src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/${
-              restaurant.info.cloudinaryImageId
-            }"/>
+            src="${Constants.IMAGE_URL}/${restaurant.info.cloudinaryImageId}"/>
             alt=""
           />
         </figure>
@@ -111,6 +122,7 @@ const getHomeData = async () => {
           }</p>
         </div>
       </div>
+      </a>
         `
       )
       .join("");
@@ -124,6 +136,12 @@ const getHomeData = async () => {
     top_restaurant_card
   );
   restaurants_cards_wrapper.insertAdjacentHTML("afterbegin", restaurants_cards);
-};
+})();
 
-getHomeData();
+leftArrow.addEventListener("click", () => {
+  banner_images_wrapper.scrollLeft -= 500;
+});
+rightArrow.addEventListener("click", () => {
+  banner_images_wrapper.scrollLeft += 500;
+});
+// getHomeData();
