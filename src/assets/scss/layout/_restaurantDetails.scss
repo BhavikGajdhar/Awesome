@@ -1,0 +1,171 @@
+.restaurant-info-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+}
+.restaurant-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: $text-gray-darker;
+}
+.restaurant-cuisines,
+.restaurant-area-name {
+  font-weight: 400;
+  font-size: 14px;
+  color: $text-gray-light;
+}
+.restaurant-rating-wrapper {
+  border: 1px solid rgba($color: grey, $alpha: 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  hr {
+    width: 100%;
+    margin: 6px 0;
+    &:last-child{
+      display: none;
+    }
+  }
+}
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  &-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba($color: green, $alpha: 0.6);
+    margin-left: 6px;
+  }
+}
+.restaurant-rating-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+.restaurant-total-rating-text {
+  font-weight: 700;
+  font-size: 12px;
+  color: $text-gray-light;
+  white-space: nowrap;
+}
+.restaurant-distance-text {
+  font-size: 14px;
+  color: $text-gray-light;
+  margin-top: 8px;
+  font-weight: 400;
+}
+.dashed-border {
+  border-style: dashed;
+  margin-top: 16px;
+  border-color: $text-gray-light;
+}
+.border{
+  margin: 16px 0;
+  border-color: $text-gray-light;
+}
+.restaurant-times-price-wrapper {
+  margin-top: 20px;
+  align-items: center;
+  .restaurant-delivery-time {
+    align-items: center;
+  }
+  .restaurant-avg-price {
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+.restaurant-delivery-time-image {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+.restaurant-avg-price-image {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+.restaurant-times-price-text {
+  font-size: 14px;
+  color: $text-gray-darker;
+  font-weight: 700;
+}
+.restaurant-offers-wrapper {
+  margin-top: 32px;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.restaurant-offer-card-wrapper{
+  border: 1px solid $text-gray-light;
+  border-radius: 6px;
+  padding-left: 6px;
+  padding-right: 32px;
+  padding-block: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  &:not(:first-child){
+    margin-left: 16px;
+  }
+
+  .offer-tag-img{
+    width: 26px;
+    min-width: 20px;
+  }
+ 
+
+  .offer-header-text{
+    font-weight: 700;
+    color: $text-gray-dark;
+    white-space: nowrap;
+    margin-left: 6px;
+  }
+
+  .offer-description{
+    font-weight: 600;
+    font-size: 12px;
+    color: $text-gray-light;
+    white-space: nowrap;
+  }
+}
+.restaurant-type{
+  font-weight: 700;
+  font-size: 16px;
+  color: $text-gray-darker;
+  margin-top: 30px;
+}
+.menu-wrapper{
+  background-color: white;
+  padding: 8px 4px;
+}
+.menu-accordion-icon{
+   width: 24px;
+   height: 24px;
+   transform: rotate(180deg);
+   background-color: transparent;
+   border: 0px;
+}
+
+.food-item-wrapper{
+  margin-top: 20px;
+}
+.item-tag-img{
+  width: 100px;
+  height: 100px;
+  margin: 20px 10px ;
+  border-radius: 8px;
+}
